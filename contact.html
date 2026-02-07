@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Keir Buettner</title>
+  <meta name="description" content="Contact Keir Buettner — email or message form." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand-box" href="index.html">Keir Buettner</a>
+    </div>
+  </header>
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <div class="initials">KB</div>
+      <ul class="nav-links" role="menubar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="index.html#resume">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <section class="panel">
+      <div class="container">
+        <h1>Contact</h1>
+        <p>If you'd like to reach me via email directly: <a class="link" href="mailto:ksbuettn@asu.edu">ksbuettn@asu.edu</a>. Or use the form below.</p>
+        <form class="contact-form" action="https://webdevbasics.net/scripts/demo.php" method="POST" >
+          <div class="form-grid">
+            <label for="name">Name
+            </label>
+            <input id="name" name="name" type="text" >
+            <label for="email">Email
+            </label>
+            <input id="email" name="email" type="email">
+            <label for="reason">Reason for Contact
+            </label>
+            <input id="reason" name="reason" type="text">
+            <label for="comments">Additional Comments
+              <span class="form-hint">Any further explanation, info or other details I should know?</span>
+            </label>
+            <textarea id="comments" name="comments" rows="6" aria-describedby="comments-hint"></textarea>
+            <div id="comments-hint" class="sr-only">Any other explanation, info or other details as to why I am being contacted.</div>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Send message</button>
+            <button type="reset" class="btn btn-ghost">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+</main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year">2026</span> Keir Buettner — Arizona State University <a class="link" href="index.html">Back to home</a></p>
+    </div>
+  </footer>
+<!--I looked this up online so that as time goes on my document will update itself!-->
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
