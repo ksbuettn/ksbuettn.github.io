@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keir's First Website</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Keir Buettner — Portfolio</title>
+<meta name="description" content="Portfolio landing page for Keir Buettner — quick intro, portfolio links, resume and contact." />
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    Hello, world! I am Keir Buettner. I am learning how to create websites
+<header class="site-header">
+<div class="container header-inner">
+<div class="brand-box">Keir Buettner</div>
+</div>
+</header>
+<nav class="site-nav">
+<div class="container nav-inner">
+<div class="initials">KB</div>
+<ul class="nav-links" role="menubar">
+<li role="none"><a role="menuitem" href="aboutme.html">About Me</a></li>
+<li role="none"><a role="menuitem" href="portfolio.html">Portfolio</a></li>
+<li role="none"><a role="menuitem" href="resume.html">Resume</a></li>
+<li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
+</ul>
+</div>
+</nav>
+<main>
+<section id="home" class="hero">
+<div class="container hero-inner">
+<div class="hero-media" role="img"> <img src="Hero.JPG" alt="Hero Image"></div>
+<div class="hero-content">
+<h1 class="intro">Hello — I'm <span class="name">Keir!</span></h1>
+<p class="lead">College student (class of '26) based in Mesa, AZ &amp; Gig Harbor, WA. In this portfolio you can expect to learn about my projects, skills and experience as well as a bit about me.</p>
+<div class="hero-cta">
+<a class="btn btn-portfolio" href="#portfolio">View Portfolio</a>
+<a class="btn btn-resume" href="https://docs.google.com/document/d/1nmQOn8ZA6j4yg9rsNjFzIav2XfUhEQOvdaxueIj1F68/edit?usp=sharing">Download Resume</a>
+</div>
+</div>
+</div>
+</section>
+<section class="intro-block">
+<div class="container">
+<p class="brief">I’m currently studying Technological Entrepreneurship and Management at Arizona State University. Where I've primarily focused on data analytics, marketing and web development.</p>
+</div>
+</section>
+<section id="resume" class="panel">
+<div class="container">
+<h2>Resume</h2>
+<!--I looked up target and rel tags because I wanted a way for doc to open in new tab-->
+<p><a class="link" href="https://docs.google.com/document/d/1nmQOn8ZA6j4yg9rsNjFzIav2XfUhEQOvdaxueIj1F68/edit?usp=sharing" target="_blank" rel="noopener">Download resume (PDF)</a></p>
+</div>
+</section>
+<section id="contact" class="panel">
+<div class="container">
+</main>
+<footer class="site-footer">
+<div class="container">
+<p>&copy; <span id="year">2026</span> Keir Buettner — Arizona State University. <a class="link" href="#home">Back to top</a></p>
+</div>
+</footer>
+<!--I looked this up online so that as time goes on my document will update itself!-->
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
