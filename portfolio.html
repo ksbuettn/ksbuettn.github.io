@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portfolio — Keir Buettner</title>
-  <meta name="description" content="Selected projects and certificates from Keir Buettner." />
+  <meta name="description" content="Selected projects, case studies and certificates that demonstrate skills of Keir Buettner." />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,11 +17,10 @@
     <div class="container nav-inner">
       <div class="initials">KB</div>
       <ul class="nav-links" role="menubar">
-        <li role="none"><a role="menuitem" href="index.html">Home</a></li>
-        <li role="none"><a role="menuitem" href="aboutme.html">About Me</a></li>
-        <li role="none"><a role="menuitem" href="portfolio.html" >Portfolio</a></li>
-        <li role="none"><a role="menuitem" href="index.html#resume">Resume</a></li>
-        <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
+      <li role="none"><a role="menuitem" href="aboutme.html">About Me</a></li>
+      <li role="none"><a role="menuitem" href="portfolio.html">Portfolio</a></li>
+      <li role="none"><a role="menuitem" href="index.html#resume">Resume</a></li>
+      <li role="none"><a role="menuitem" href="contact.html">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -31,37 +30,107 @@
         <h1>Portfolio</h1>
         <p class="muted">Here is a number of projects, coursework and certificates I have completed while attending Arizona State University. 
             Each showcasing different skills and technologies I've learned and applied in my studies.</p>
-        </p>
-        <div class="projects-grid">
-          <article class="card">
-            <div class="card-media" aria-hidden="true"></div>
-            <div class="card-body">
-              <h3>Digital Marketing</h3>
-              <p class="muted">(Shopify website, Charity Water, digital marketing certificates.)</p>
-              <p class="card-actions"><a class="link" href="#">Details</a> • <a class="link" href="#">Live</a></p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-media" aria-hidden="true"></div>
-            <div class="card-body">
-              <h3>Data Analytics</h3>
-              <p class="muted">(Grammys Data Project, Tableau, Certificate)</p>
-              <p class="card-actions"><a class="link" href="#">Details</a></p>
-            </div>
-          </article>
-          <article class="card">
-            <div class="card-media" aria-hidden="true"></div>
-            <div class="card-body">
-              <h3>Web Development</h3>
-              <p class="muted">(Pacific Trails Case Study, This Portfolio Website, and Shopify Web Page)</p>
-              <p class="card-actions"><a class="link" href="#">Details</a></p>
-            </div>
-          </article>
-        </div>
-      </div>
+  <!--Certificates-->
+<h3 class="portfolio-subheading">Certificates</h3>
+<div class="certificates">
+  <figure class="certificate">
+    <img src="DigMktgCert.jpeg" alt="Digital Marketing Certificate — Global Career Accelerator" loading="lazy" />
+    <figcaption>Digital Marketing Certificate</figcaption>
+  </figure>
+  <figure class="certificate">
+    <img src="DACert.jpg" alt="Data Analytics Certificate — Global Career Accelerator" loading="lazy" />
+    <figcaption>Data Analytics Certificate</figcaption>
+  </figure>
+</div>
+<!-- Projects-->
+<h3 class="portfolio-subheading">Projects</h3>
+<div class="projects-grid" role="list">
+  <article class="card" role="listitem">
+    <div class="card-media" >
+      <img src="Grammys.jpg" alt="Grammys Data Project" loading="lazy">
+    </div>
+    <div class="card-body">
+      <h3>Grammy Awards Case Study</h3>
+      <p class="muted">Using Grammy Awards data I visualized and analyzed trends in awards and artist performance over the years.</p>
+    </div>
+  </article>
+  <article class="card" role="listitem">
+    <div class="card-media">
+      <img src="DAIntel.jpg" alt="Intel Data Analytics project" loading="lazy">
+    </div>
+    <div class="card-body">
+      <h3>Intel Case Study</h3>
+      <p class="muted">In this study using Intel data I had to query in SQL as well as analyze and effectively present results of analysis.</p>
+    </div>
+  </article>
+  <article class="card" role="listitem">
+    <div class="card-media">
+      <img src="PMEA.jpg" alt="Project Management case study" loading="lazy">
+    </div>
+    <div class="card-body">
+      <h3>Electronic Arts Simulation</h3>
+      <p class="muted">This simulation by EA focused on evaluating key performance indicators and effectively presenting data-driven analysis based off of said KPI's.</p>
+    </div>
+  </article>
+</div>
     </section>
   </main>
-  <footer class="site-footer">
+<section class="panel">
+  <div class="container">
+    <h2 class="portfolio-subheading">Project & Certificate Summary</h2>
+    <div class="table-wrapper">
+      <table class="portfolio-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Project / Certificate</th>
+            <th>Tools & Skills Used</th>
+            <th>Year Completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Certificate</td>
+            <td>Digital Marketing Certificate</td>
+            <td>SEO, Shopify, Data-Driven Insight, Digital Marketing, eCommerce</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>Certificate</td>
+            <td>Data Analytics Certificate</td>
+            <td>Excel, Tableau, Data Cleaning, Analysis & Visualization</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Project</td>
+            <td>Grammys Awards Case Study</td>
+            <td>Data Visualization & Analysis, Excel, Tableau Dashboards</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Project</td>
+            <td>Intel Case Study</td>
+            <td>Query in SQL, Data Analysis, Communication</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Project</td>
+            <td>Electronic Arts Simulation</td>
+            <td>Product Management, Key Performance Indicators, Communication</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Project</td>
+            <td>Portfolio Website</td>
+            <td>HTML, CSS, Responsive Web Design</td>
+            <td>2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
     <div class="container">
       <p>&copy; <span id="year">2026</span> Keir Buettner — Arizona State University <a class="link" href="index.html">Back to home</a></p>
     </div>
