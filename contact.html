@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+  <meta name="description" content="Contact form for Keir Buettner — email or write a message form with name, email and reason for contact." />
+  <meta name="author" content="Keir Buettner Contact Form"/>
+  <meta name="referrer" content="origin" />
   <title>Contact — Keir Buettner</title>
-  <meta name="description" content="Contact Keir Buettner — email or message form." />
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -29,15 +31,15 @@
     <section class="panel">
       <div class="container">
         <h1>Contact</h1>
-        <p>If you'd like to reach me via email directly: <a class="link" href="mailto:ksbuettn@asu.edu">ksbuettn@asu.edu</a>. Or use the form below.</p>
-        <form class="contact-form" action="https://webdevbasics.net/scripts/demo.php" method="POST" >
+        <p>If you'd like to reach me via email directly: <a class="link" href="mailto:keirbuettner@gmail.com">keirbuettner@gmail.com</a>. Or use the form below.</p>
+        <form class="contact-form" action="https://formspree.io/keirbuettner@gmail.com" method="POST" >
           <div class="form-grid">
             <label for="name">Name
             </label>
             <input id="name" name="name" type="text" >
             <label for="email">Email
             </label>
-            <input id="email" name="email" type="email">
+            <input id="email" name="_replyto" type="email">
             <label for="reason">Reason for Contact
             </label>
             <input id="reason" name="reason" type="text">
